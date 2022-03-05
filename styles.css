@@ -1,3 +1,66 @@
-body {
-    align-content: center;
+main {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+img {
+    width: 400px;
+}
+
+#status {
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+/* #hidden {
+    display:none;
+} */
+.infoBar{
+     margin-top: 150px;
+    /* margin-right: 100px;
+    margin-left: 20%; */ 
+    /* padding:40px */
+    position: relative;
+    right: 100px;
+    
+}
+
+#statusPic {
+    width: 80px;
+    
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* justify-content: space-around; */
+}
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#titlePic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+#title{
+    margin: 0 auto;
+}
+
+.button{
+    width: 80px;
+    margin: 20px
+}
+
+body{
+    background: url(background.jpeg) no-repeat center center;
+    background-size: cover;
+
 }

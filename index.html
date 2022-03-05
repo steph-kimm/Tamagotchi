@@ -4,29 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tamagotchi</title>
     <script src="script.js" defer asych></script>
     <link rel="stylesheet" href="styles.css"/>
 </head>
+
 <body>
-    <h1 id="title"> Choose your E-Pets name!</h1>
+    <main>
+        <div class="infoBar">
+            <h3 id="age"> </h3>
+            <h4 id="energy"> </h4>
+            <h4 id="hunger"> </h4>
+            <h4 id="boredom"> </h4>
+        </div>
+    <div id="titlePic">
+        <h1 id="title"> Choose your E-Pets name!</h1>
+        <img id="petPicture"src="green-baby-dino.png" alt="I'm a picture that's not found yet">
+    </div>
+
+    <div id="status"> 
+        <h3>Status: </h3>
+        <img id="statusPic" src="statusPics/happy.jpeg" alt="I'm a pic"/>
+    </div>
+    </main>
+    
+    <br/>
     <form>
-        <img src="" alt="I'm a picture that's not found yet">
-        <br/>
         <input type="text" id="petName" name="petName" placeholder="Mittens">
         <button id="name">Choose Name!</button>
-        
-        
     </form>
+    
+    <div class="buttons">
+        <input type="image" src="icons/dog bed.jpeg" onClick="sleep()" class="button">
+        <input type="image" src="icons/food.png" onClick="feed()" class="button">
+        <input type="image" src="icons/leash.png" onClick="boredom()" class="button">
 
-    <h3 id="age"><span id="ageNum"></span></h3>
-    <h4 id="energy"><span id="energyNum"></span> </h4>
-    <h4 id="hunger"> </h4>
-    
-
-    <button id="sleep" onClick="sleep()">Sleep!</button>
-    <button id="hungerBtn" onClick="feed()"> Feed! </button>
-    
-    
+        <!-- <button id="sleep" onClick="sleep()">Sleep!</button>
+        <button id="hungerBtn" onClick="feed()"> Feed! </button>
+        <button id="boredomBtn" onClick="boredom()"> Walk! </button> -->
+    </div>
 </body>
 </html>
