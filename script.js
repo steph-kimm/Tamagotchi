@@ -97,9 +97,9 @@ function setStatus(){
         document.getElementById("petPicture").setAttribute("src" , "statusPics/bones.jpeg")
     }else if(boreTime>50){
         document.getElementById("statusPic").setAttribute("src" , "statusPics/bored.jpeg")
-    }else if(feedTime>40){
+    }else if(feedTime>50){
         document.getElementById("statusPic").setAttribute("src" , "statusPics/hungry.jpeg")
-    }else if(Energytime<30){
+    }else if(Energytime<50){
         document.getElementById("statusPic").setAttribute("src" , "statusPics/sleepy.jpeg")
     }else{
         document.getElementById("statusPic").setAttribute("src" , "statusPics/happy.jpeg")
